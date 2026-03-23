@@ -14,54 +14,39 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.navbar a{
-    margin: 0 10px;
-}
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
-.navbar > div, 
+.navbar a{
+    padding: 6px 12px;
+    font-size: 15px;
+    margin: 0;
+}
+.navbar > div,
 .navbar > a{
     display: flex;
     align-items: center;
 }
+
 .navbar a{
-    color: #ffffff !important;   /* trắng rõ */
-    text-decoration: none !important;  /* bỏ gạch chân */
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
     font-weight: 600;
     padding: 8px 14px;
     border-radius: 20px;
     transition: 0.3s;
-    opacity: 1 !important; /* chống bị mờ */
 }
 
-/* hover nhẹ cho đẹp nhưng không phá layout */
 .navbar a:hover{
     background: rgba(255,255,255,0.15);
 }
 
-/* nếu có trạng thái active */
 .navbar a.active{
-    color: #ffffff;
     background: rgba(255,255,255,0.2);
 }
-.login-btn{
-    background:linear-gradient(135deg,#4facfe,#00f2fe);
-    color:white !important;
-    padding:8px 15px;
-    border-radius:20px;
-    text-decoration:none;
-    margin-left:10px;
-    transition:0.3s;
-}
-.login-btn:hover{
-    transform:scale(1.05);
-}
-*{margin:0;padding:0;box-sizing:border-box;}
+
 body{
     background-image: url('https://cdn-media.sforum.vn/storage/app/media/ctvseo_MH/%E1%BA%A3nh%20%C4%91%E1%BA%B9p%20Qu%E1%BA%A3ng%20Tr%E1%BB%8B/anh-dep-quang-tri-9.jpg');
     background-size: cover;
@@ -149,7 +134,6 @@ footer{text-align:center;padding:25px;background:#1a2f38;color:white;margin-top:
     <a href="#gallery">Thư viện</a>
     <a href="#contact">Liên hệ</a>
     <a href="#map">Bản đồ</a>
-    <a href="login.html" class="login-btn">Đăng nhập</a>
   </div>
 </div>
 
